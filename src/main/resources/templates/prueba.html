@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f3f4f6;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+      .container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid #e2e8f0;
+      }
+      .header {
+        background-image: url(https://psicopedagogia-backend.serverbb.online/api/v1/public/file/download/pp2_20240529-235622081.jpg);
+        background-size: 100% auto;
+        background-position: center;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .header img {
+        max-height: 70px;
+        margin: 0 10px;
+      }
+      /****888   
+ background-image: url(https://psicopedagogia-backend.serverbb.online/api/v1/public/file/download/fondobanner_20240530-000038245.jpg);
+        */
+      .header1 {
+        background-size: 100% auto;
+        background-position: center;
+        height: 13rem;
+        width: 100%;
+        text-align: center;
+      }
+      .header2 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+        background-color: #f3f4f6;
+        border-top: 1px solid #e2e8f0;
+      }
+      .header1 img {
+        max-width: 180px;
+      }
+
+      .welcome {
+        color: #00197c;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 1.5rem;
+      }
+      .welcome1 {
+        color: #fefeff;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 2rem;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+      }
+      .message {
+        color: #4a5568;
+        padding: 20px;
+        text-align: justify;
+        font-size: 1rem;
+      }
+      .message span {
+        display: block;
+        font-size: 1.2rem;
+        color: #e53e3e;
+        margin: 20px 0;
+      }
+      .footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #f3f4f6;
+        border-top: 1px solid #e2e8f0;
+      }
+      .footer a {
+        color: #0026c3;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .valores {
+        background-color: #00c1b1;
+        color: #fefeff;
+        border: none;
+        border-radius: 25px;
+        padding: 10px 20px;
+        margin: 10px;
+        cursor: pointer;
+        font-size: 0.8rem;
+        width: 4rem;
+        border: 4px solid #00c1b1;
+      }
+      .valores:hover {
+        background-color: #fdfdfd;
+        color: #00c1b1;
+        width: 4.2rem;
+      }
+      .valores.a {
+        background-color: #d2dd02;
+        border: 4px solid #d2dd02;
+      }
+      .valores:hover.a {
+        background-color: #fdfdfd;
+        color: #d2dd02;
+        width: 4.2rem;
+      }
+      .valores.b {
+        background-color: #00da2c;
+        border: 4px solid #00da2c;
+      }
+      .valores:hover.b {
+        background-color: #fdfdfd;
+        color: #00da2c;
+        width: 4.2rem;
+      }
+      .valores.c {
+        background-color: #f8ac07;
+        border: 4px solid #f8ac07;
+      }
+      .valores:hover.c {
+        background-color: #fdfdfd;
+        color: #f8ac07;
+        width: 4.2rem;
+      }
+      .header{
+        background-color: #000f4a;
+      }
+      .header .imagen{
+        width: 14rem;
+        height: 14rem;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+        class="imagen"
+          src="data:image/png;base64,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"
+          alt="Imagen 1"
+        />
+        <img
+          src="https://tja.ucb.edu.bo/wp-content/uploads/2020/09/cropped-logo-UCB.png"
+          alt="Imagen 2"
+        />
+      </div>
+
+      <p class="message">
+       Bienvenido al Sistema de Información de la Carrera de Ingeniería de Sistemas
+        <br /><br />
+        <span>Estimado estudiante:</span>
+        <br /><br />
+        Te damos la bienvenida al Sistema de Información de la Carrera de Ingeniería de Sistemas. Este sistema está diseñado para brind
+      </p>
+
+    
+  
+   
+      <h3 style="margin-left: 1rem; color: #00197c">
+        Atención de Dirección de Carrera
+      </h3>
+
+      <p class="message">
+        Av. 14 de Septiembre y Calle 2 de Obrajes \
+        <br /><br />
+        Departamento de Psicopedagogía Bloque N
+
+        <br /><br />
+        Horarios de atención: de lunes a viernes de 08:30 a 16:30<br /><br />
+        Contacto: 2782222 Int. 2872<br /><br />
+        WhatsApp: 73231313 – 77294940
+      </p>
+
+      <p class="message">Atentamente, Direccion de Carrera de Ing. de Sistemas</p>
+    </div>
+    <div class="footer">
+      <p>
+        Visita nuestro sitio web en
+        <a href="https://sis-ucb.online"
+          >https://sis-ucb.online</a
+        >
+      </p>
+    </div>
+  </body>
+</html>

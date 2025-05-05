@@ -1,0 +1,7 @@
+
+# application.yml
+eureka:
+  client:
+    enabled: false
+
+debug: ${DEBUG:true}
