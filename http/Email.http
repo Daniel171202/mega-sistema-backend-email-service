@@ -3,8 +3,10 @@ POST http://localhost:8017/api/v1/auth/send-email-invitation
 Content-Type: application/json
 
 {
-   "recipients": ["daniel.aldazosa@gmail.com", "daniel.aldazosa@gmail.com", "daniel.aldazosa@gmail.com","daniel.aldazosa@gmail.com", "daniel.aldazosa@gmail.com", "daniel.aldazosa@gmail.com","daniel.aldazosa@gmail.com", "daniel.aldazosa@gmail.com", "daniel.aldazosa@gmail.com","daniel.aldazosa@gmail.com", "daniel.aldazosa@gmail.com", "daniel.aldazosa@gmail.com","daniel.aldazosa@gmail.com", "daniel.aldazosa@gmail.com", "daniel.aldazosa@gmail.com","daniel.aldazosa@gmail.com", "daniel.aldazosa@gmail.com", "daniel.aldazosa@gmail.com"],
-
+  "recipients": ["daniel.aldazosa@gmail.com",
+    "daniel.alsa@gmail.com",
+    "jhessikazarate@gmail.com",
+    "tania.perez.d@ucb.edu.bo"],
   "subject": "NOTASSSS",
   "body": ""
 }
