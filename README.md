@@ -51,7 +51,7 @@ Content-Type: application/json
   "body": ""
 }
 
-```http
+
 POST http://localhost:8017/api/v1/auth/send-email-html
 Content-Type: application/json
 
