@@ -24,6 +24,15 @@ Este servicio permite enviar correos electrónicos de forma paralela (multi-thre
 
 ---
 
+## 📑 Informe Técnico
+
+Puedes consultar el **informe técnico** completo del microservicio en el siguiente enlace:
+
+[**Informe Técnico del Microservicio**](https://drive.google.com/file/d/1KxCW39bj4SnenyGOI4jfD8Qc5iUF0faj/view?usp=sharing)
+
+---
+
+
 ## 🔧 Endpoints Disponibles
 
 ### 1. `POST /api/v1/auth/send-email-invitation`
